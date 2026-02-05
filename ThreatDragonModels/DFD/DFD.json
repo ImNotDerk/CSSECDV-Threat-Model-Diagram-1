@@ -257,12 +257,26 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "42aeac03-bbae-4bcb-a305-8ee57e584403",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
@@ -1253,6 +1267,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 12
+    "threatTop": 13
   }
 }
