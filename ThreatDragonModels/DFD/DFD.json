@@ -31,8 +31,8 @@
                 "text": "Web Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -129,14 +129,28 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "30785f02-c7dd-4cd3-8d3d-71bcf9c5c861",
+                  "title": "Web Application Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -647,7 +661,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -668,13 +683,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "7639ae69-1038-4949-8280-1defd605d8d4",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Insert Feedback Comments"
@@ -687,6 +721,17 @@
             "target": {
               "x": 970,
               "y": 980
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -878,11 +923,13 @@
                 "text": "SQL Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -979,13 +1026,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "32c85ad8-1b73-444d-9783-b11ee761e9b8",
+                  "title": "Malicious SQL Code Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": " SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "f13a63db-d64d-4372-9843-07ef11db37bd",
+                  "title": "Unverified SQL Database Data Writes",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1002,11 +1082,13 @@
                 "text": "LDAP"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1103,13 +1185,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f97579d1-e5d9-4498-a29a-e245178318cb",
+                  "title": "LDAP Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1234,6 +1336,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 18
   }
 }
