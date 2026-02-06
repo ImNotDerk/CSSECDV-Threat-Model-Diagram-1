@@ -888,6 +888,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -971,7 +972,6 @@
               ]
             },
             "id": "4bb16cd3-739f-48ac-9d41-282d0dcd9661",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -1012,6 +1012,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1095,7 +1096,6 @@
               ]
             },
             "id": "4f78d0ef-6085-44bb-bc3d-1a2036c92a1f",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1133,6 +1133,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1216,7 +1217,6 @@
               ]
             },
             "id": "859ebbc4-9ce3-4a02-bd43-445fbd02fa43",
-            "zIndex": 17,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
